@@ -16,8 +16,8 @@ const countLetters = function(sentence) {
   for (const letter of sentence) {
     // if a character is not a space character do this
     if (letter !== " ") {
-      //if the letter already exists in letters increment it by 1
-      //else initialize it to 1
+      // if the letter already exists in letters increment it by 1
+      // else initialize it to 1
       if (letters[letter]) {
         letters[letter] += 1;
       } else {
