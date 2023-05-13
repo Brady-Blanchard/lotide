@@ -1,43 +1,22 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// require assertArraysEqual function
+const assertArraysEqual = require('./assertArraysEqual');
 
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅✅✅Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
+// function that takes in an array and returns the middle
 const middle = function(arr1) {
-  let newArray = [];
-  if (arr1.length === 1 || arr1.length === 2) {
+  let newArray = []; // initialize new array
+  if (arr1.length === 1 || arr1.length === 2) { // if the length of arr1 is 1 or 2 return empty array
     return newArray;
-  } else if (arr1.length % 2 === 1) {
-    let half = Math.floor(arr1.length / 2);
-    newArray.push(arr1[half]);
-    return newArray;
-  } else if (arr1.length % 2 === 0) {
-    let half = Math.floor(arr1.length / 2);
-    newArray.push(arr1[half - 1]);
-    newArray.push(arr1[half]);
-    return newArray;
+  } else if (arr1.length % 2 === 1) { // otherwise if arr1 is odd
+    let centre = Math.floor(arr1.length / 2); // calculates the centre
+    newArray.push(arr1[centre]); // push the centre element of arr1 into new array
+    return newArray; // returns newArray
+  } else if (arr1.length % 2 === 0) { // otherwise if arr1 is even
+    let centre = Math.floor(arr1.length / 2); // calculates the centre
+    newArray.push(arr1[centre - 1]); // pushes both middle elements from arr1 to newArray
+    newArray.push(arr1[centre]);
+    return newArray; // returns newArray
   }
 };
 
-// TEST CODE
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]),[3, 4]);
+// EXPORT FUNCTION
+module.exports = middle;
