@@ -33,3 +33,5 @@ The following functions are currently implemented:
 * `countOnly([...],{...})`: takes an array and object and returns an object with the count of each element in the array that's value is true in the second parameter.
 * `letterPositions("...")`: takes a string and returns an object with the letters as keys and their indecies as their value.
 * `findKeyByVal({...},"...")`: takes an object and a value and returns the first key from the object that matches the value.
+* `eqArrays([...],[...])`: takes in two arrays as parameters and returns true or false depending on the equality of the elements.
+* `eqObjects({...},{...})`: takes in two objects as parameters and returns true or false depending on the equality of the keys and values.

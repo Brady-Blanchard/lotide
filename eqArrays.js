@@ -1,5 +1,3 @@
-// Implement function that takes 2 arrays and returns true or false, based on a perfect match
-
 // function for testing the equality of arrays
 const eqArrays = function(arr1, arr2) {
   // if arrays don't have the same length return false
