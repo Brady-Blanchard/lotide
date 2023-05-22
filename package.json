@@ -2,7 +2,7 @@
   "name": "@brady-blanchard/lotide",
   "version": "1.0.0",
   "description": "mini lodash package",
-  "main": "assertArraysEqual.js",
+  "main": "README.md",
   "directories": {
     "test": "test"
   },
