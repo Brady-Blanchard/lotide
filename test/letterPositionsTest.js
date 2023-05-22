@@ -8,7 +8,7 @@ const test1 = letterPositions("hello");
 
 describe("#letterPositions", () => {
   it("returns [0] for test1['h']", () => {
-    assert.deepEqual(test1["h"], [0]);
+    assert.strictEqual(test1["h"], [0]);
   });
   it("returns [1] for test1['e']", () => {
     assert.deepEqual(test1["e"], [1]);

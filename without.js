@@ -1,27 +1,11 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// require function for testing the equality of arrays
+const assertArraysEqual = require('./assertArraysEqual');
 
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅✅✅Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
+// function for removing elements in an array
 const without = function(source, itemsToRemove) {
-  let newArray = [];
-  for (let i = 0; i < source.length; i++) {
-    if (itemsToRemove.includes(source[i]) === false) {
+  let newArray = []; // initialize a new array
+  for (let i = 0; i < source.length; i++) { // loop through the source array
+    if (itemsToRemove.includes(source[i]) === false) { //if the element is not in the itemsToRemove array
       newArray.push(source[i]);
     }
   }
@@ -29,7 +13,7 @@ const without = function(source, itemsToRemove) {
 };
 
 
-//test cases
+// TEST CODE
 without([1, 2, 3], [1]); // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 const words = ["hello", "world", "lighthouse"];

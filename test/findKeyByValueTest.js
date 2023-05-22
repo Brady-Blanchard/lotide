@@ -11,7 +11,7 @@ const bestTVShowsByGenre = {
 };
 
 describe("#findKeyByValue", () => {
-  // ensures it returns undefined if the key value doesn't exist 
+  // ensures it returns undefined if the key value doesn't exist
   it(`returns undefined for findKeyByValue(bestTVShowsByGenre, "That '70s Show")`, () => {
     assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
   });

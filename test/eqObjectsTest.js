@@ -12,11 +12,11 @@ const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] }
 const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
 
 describe("#eqObjects", () => {
-  // ensure objects with came keys and value evaluate to true 
+  // ensure objects with came keys and value evaluate to true
   it("returns true for eqObjects(shirtObject, anotherShirtObject)", () => {
     assert.deepEqual(eqObjects(shirtObject, anotherShirtObject), true);
   });
-  // ensure that objects that are not equal if they have more keys 
+  // ensure that objects that are not equal if they have more keys
   it("returns false for eqObjects(shirtObject, longSleeveShirtObject)", () => {
     assert.deepEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
   });
@@ -24,7 +24,7 @@ describe("#eqObjects", () => {
   it(`returns true for eqObjects(multiColorShirtObject, anotherMultiColorShirtObject)`, () => {
     assert.deepEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true);
   });
-  // ensure thet objects are not equal if they have less keys 
+  // ensure thet objects are not equal if they have less keys
   it(`returns false for eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject)`, () => {
     assert.deepEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false);
   });

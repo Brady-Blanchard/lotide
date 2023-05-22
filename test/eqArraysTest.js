@@ -4,11 +4,11 @@ const eqArrays = require('../eqArrays');
 
 // TEST CODE
 describe("#eqArrays", () => {
-  // ensure the arrays are equal with numbers 
+  // ensure the arrays are equal with numbers
   it("returns true for eqArrays([1, 2, 3], [1, 2, 3])", () => {
     assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
   });
-  // ensure the function returns false if not equal 
+  // ensure the function returns false if not equal
   it("returns false for eqArrays([1, 2, 3], [3, 2, 1])", () => {
     assert.deepEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
   });
