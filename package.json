@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@brady-blanchard/lotide",
   "version": "1.0.0",
   "description": "mini lodash package",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/Brady-Blanchard/lotide.git"
   },
-  "author": "Brady Blanchard",
+  "author": {
+    "name" : "Brady Blanchard",
+    "email" : "bradyjames97@hotmail.com",
+    "url" : "https://github.com/Brady-Blanchard"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Brady-Blanchard/lotide/issues"
