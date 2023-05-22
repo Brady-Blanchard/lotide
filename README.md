@@ -30,3 +30,4 @@ The following functions are currently implemented:
 * `tail([...])`: returns the last element in an array
 * `middle([...])`: returns the middle of an array that has at least 3 elements
 * `flatten([...[...]])`: takes an array of arrays and returns a singular array with all elements
+* `countOnly([...],{...})`: takes an array and object and returns an object with the count of each element in the array that's value is true in the second parameter
