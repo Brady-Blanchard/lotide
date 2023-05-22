@@ -1,3 +1,4 @@
+// takes an array of arrays and returns a singular array with all elements
 const flatten = function(arr1) {
   let newArray = [];
   for (let i = 0; i < arr1.length; i++) {
@@ -9,8 +10,8 @@ const flatten = function(arr1) {
       newArray.push(arr1[i]);
     }
   }
-  return console.log(newArray);
+  return newArray;
 };
 
-// TEST CODE
-flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
+// EXPORT FUNCTION
+module.exports = flatten;

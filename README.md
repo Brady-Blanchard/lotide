@@ -29,3 +29,4 @@ The following functions are currently implemented:
 * `head([...])`: returns the first element in an arrray
 * `tail([...])`: returns the last element in an array
 * `middle([...])`: returns the middle of an array that has at least 3 elements
+* `flatten([...[...]])`: takes an array of arrays and returns a singular array with all elements
