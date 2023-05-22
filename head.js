@@ -3,5 +3,5 @@ const head = function(array) {
   return array[0];
 };
 
-// EXPORT FUNCTION
+// EXPORT head FUNCTION
 module.exports = head;

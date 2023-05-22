@@ -1,6 +1,3 @@
-// require assertArraysEqual function
-const assertArraysEqual = require('./assertArraysEqual');
-
 // function that takes in an array and returns the middle
 const middle = function(arr1) {
   let newArray = []; // initialize new array
