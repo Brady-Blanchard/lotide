@@ -1,8 +1,8 @@
 {
   "name": "@brady-blanchard/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mini lodash package",
-  "main": "README.md",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
