@@ -26,8 +26,9 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `head([...])`: returns the first element in an arrray
-* `tail([...])`: returns the last element in an array
-* `middle([...])`: returns the middle of an array that has at least 3 elements
-* `flatten([...[...]])`: takes an array of arrays and returns a singular array with all elements
-* `countOnly([...],{...})`: takes an array and object and returns an object with the count of each element in the array that's value is true in the second parameter
+* `head([...])`: returns the first element in an arrray.
+* `tail([...])`: returns the last element in an array.
+* `middle([...])`: returns the middle of an array that has at least 3 elements.
+* `flatten([...[...]])`: takes an array of arrays and returns a singular array with all elements.
+* `countOnly([...],{...})`: takes an array and object and returns an object with the count of each element in the array that's value is true in the second parameter.
+* `letterPositions(...)`: takes a string and returns an object with the letters as keys and their indecies as their value.
