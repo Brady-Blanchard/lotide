@@ -1,10 +1,7 @@
-// require assertion function
-const assertEqual = require('./assertEqual');
-
 // this function counts each letter in a string and returns them to an object
 const countLetters = function(sentence) {
   // initializing object to return
-  let letters = {};
+  const letters = {};
   
   // loops over each letter in sentence
   for (const letter of sentence) {
@@ -23,16 +20,5 @@ const countLetters = function(sentence) {
   return letters;
 };
 
-// TEST CODE
-
-const result1 = countLetters("test 1");
-const result2 = countLetters("Test 2");
-const result3 = countLetters("Lighthouse Labs");
-
-console.log(result1);
-console.log(result2);
-console.log(result3);
-
-assertEqual(result1["1"], 1);
-assertEqual(result2["T"], 1);
-assertEqual(result3["L"], 2);
+// EXPORT FUNCTION
+module.exports = countLetters;

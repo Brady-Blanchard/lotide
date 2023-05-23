@@ -5,7 +5,6 @@ const tail = require('../tail');
 // TEST CODE
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
 
 describe("#tail", () => {
   // ensure we get back two elements
